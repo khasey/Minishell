@@ -6,7 +6,7 @@
 /*   By: kthierry <kthierry@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 14:04:41 by humartin          #+#    #+#             */
-/*   Updated: 2022/11/05 03:02:07 by kthierry         ###   ########.fr       */
+/*   Updated: 2022/11/07 02:07:26 by kthierry         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	isbuiltin(char *line)
 	else if (ft_strncmp(line, "pwd ", 3) == 0)
 		return (0);
 	else if (ft_strncmp(line, "env ", 3) == 0)
-		return (0);	
+		return (0);
 	else
 		return (1);
 }

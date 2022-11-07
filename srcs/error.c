@@ -6,7 +6,7 @@
 /*   By: kthierry <kthierry@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 12:00:07 by humartin          #+#    #+#             */
-/*   Updated: 2022/11/07 01:48:19 by kthierry         ###   ########.fr       */
+/*   Updated: 2022/11/07 02:06:00 by kthierry         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	check_exit(char *line, char *s1)
 	if (ft_checker_exit(line) <= 1)
 	{
 		if (ft_checker_exit(line) > 0)
-			g_status = 255;	
+			g_status = 255;
 		if (ft_strcmp(line, s1) == 0)
 			exit(0);
 		while (ft_strcmp(line, s2) == 0)
@@ -62,7 +62,6 @@ void	check_exit(char *line, char *s1)
 		}
 		while (ft_single_quotes(line, s1) == 4)
 			exit(0);
-
 		while (ft_checker_exit(line) >= 1)
 		{
 			ft_putstr_fd(RED"exit: too much arg:"RESET, 2);
